@@ -17,4 +17,4 @@ pluginManagement {
 
 rootProject.name = "Numerica"
 
-include(":android", ":desktop", ":common")
+include(":android", ":desktop", ":common", )

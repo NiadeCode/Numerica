@@ -1,4 +1,4 @@
-group = "com.example"
+group = "es.niadecode"
 version = "1.0-SNAPSHOT"
 
 allprojects {
@@ -12,7 +12,7 @@ allprojects {
 plugins {
     kotlin("multiplatform") apply false
     kotlin("android") apply false
-    id("com.android.application") apply false
-    id("com.android.library") apply false
+    id("com.android.application") apply false version "7.4.2"
+    id("com.android.library") apply false version "7.4.2"
     id("org.jetbrains.compose") apply false
 }

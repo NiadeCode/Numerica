@@ -4,22 +4,22 @@ plugins {
     kotlin("android")
 }
 
-group = "com.example"
+group = "es.niadecode"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
     implementation(project(":common"))
-    implementation("androidx.activity:activity-compose:1.5.0")
+    implementation("androidx.activity:activity-compose:1.7.2")
 }
 
 android {
     compileSdkVersion(33)
     defaultConfig {
-        applicationId = "com.example.android"
+        applicationId = "es.niadecode.numerica"
         minSdkVersion(24)
         targetSdkVersion(33)
         versionCode = 1

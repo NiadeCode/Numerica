@@ -1,18 +1,16 @@
-package com.example.android
+package es.niadecode.android
 
 import android.os.Bundle
-import androidx.activity.compose.setContent
 import androidx.compose.material.MaterialTheme
-import com.example.common.App
+import es.niadecode.common.App
 import moe.tlaster.precompose.lifecycle.PreComposeActivity
+import moe.tlaster.precompose.lifecycle.setContent
 
 class MainActivity : PreComposeActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MaterialTheme {
                 App()
-            }
         }
     }
 }

@@ -1,4 +1,3 @@
-import org.jetbrains.compose.compose
 
 plugins {
     kotlin("multiplatform")
@@ -6,7 +5,7 @@ plugins {
     id("com.android.library")
 }
 
-group = "com.example"
+group = "es.niadecode"
 version = "1.0-SNAPSHOT"
 
 kotlin {
@@ -30,8 +29,8 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                api("androidx.appcompat:appcompat:1.5.1")
-                api("androidx.core:core-ktx:1.9.0")
+                api("androidx.appcompat:appcompat:1.6.1")
+                api("androidx.core:core-ktx:1.10.1")
             }
         }
 
@@ -40,6 +39,9 @@ kotlin {
                 api(compose.preview)
             }
         }
+
+        //val jsMain by getting
+
     }
 }
 
