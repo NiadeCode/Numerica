@@ -25,6 +25,8 @@ kotlin {
                 api("moe.tlaster:precompose:$precompose_version")
                 api("moe.tlaster:precompose-viewmodel:$precompose_version")
 
+                api("com.github.Gikkman:Java-Twirk:0.7.1")
+
             }
         }
         val androidMain by getting {
