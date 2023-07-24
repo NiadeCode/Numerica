@@ -18,7 +18,7 @@ class TwitchRepository(
     val participationFlow: SharedFlow<GameParticipation> = _tickFlow
 
 
-    private val twirk = TwirkBuilder("niadecode", "NiadeCode", "oauth:3adx2qtimhyx73ja2fca54zcnw9gvi")
+    private val twirk = TwirkBuilder("niadecode", "justinfan5555", "kappa")
         //.setVerboseMode(true)
         .build().apply {
             connect()
