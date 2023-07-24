@@ -68,7 +68,9 @@ class MainSceneViewModel : ViewModel() {
     }
 
 
-    /* private void OnTwitchMessageReceived(string username, string message)
+    /*
+    original code by @RothioTome
+    private void OnTwitchMessageReceived(string username, string message)
      {
          if(int.TryParse(message, out int response))
          {
