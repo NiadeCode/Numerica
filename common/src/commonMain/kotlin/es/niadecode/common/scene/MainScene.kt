@@ -14,7 +14,7 @@ import moe.tlaster.precompose.viewmodel.viewModel
 
 
 @Composable
-fun MainScene(navigatorCallback: (Int) -> Unit) {
+fun MainScene() {
     val viewModel = viewModel(modelClass = MainSceneViewModel::class, keys = listOf(null)) {
         MainSceneViewModel()
     }

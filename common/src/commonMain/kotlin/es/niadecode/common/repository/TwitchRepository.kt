@@ -14,8 +14,8 @@ class TwitchRepository(
     private val externalScope: CoroutineScope,
 ) {
 
-    private val _tickFlow = MutableSharedFlow<GameParticipation>(replay = 0)
-    val participationFlow: SharedFlow<GameParticipation> = _tickFlow
+    private val _participationFlow = MutableSharedFlow<GameParticipation>(replay = 0)
+    val participationFlow: SharedFlow<GameParticipation> = _participationFlow
 
 
     private val twirk = TwirkBuilder("niadecode", "justinfan5555", "kappa")
@@ -38,7 +38,7 @@ class TwitchRepository(
         try {
             val number = Integer.parseInt(message)
             externalScope.launch {
-                _tickFlow.emit(GameParticipation(userName, number))
+                _participationFlow.emit(GameParticipation(userName, number))
             }
 
         } catch (e: NumberFormatException) {
