@@ -42,7 +42,7 @@ class MainSceneViewModel : ViewModel() {
         val current = state.value.mapToBo()
 
         if (gameParticipation.userName == current.lastUserName) {
-            //        return //TODO uncomment to prevent same user, commented to test
+                    return //comment to debug
         }
 
         if (gameParticipation.number == current.currentScore + 1) {
