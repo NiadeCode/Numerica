@@ -1,6 +1,6 @@
 # numerica
 
-This project is a kotlin multiplatform version of @RothioTome original game Numerica https://github.com/rothiotome/numerica-twitch
+This project is a kotlin multiplatform version of @RothioTome [numerica-twitch](https://github.com/rothiotome/numerica-twitch)
 
 ## Game Description
 Does your chat know how to count?
@@ -12,4 +12,7 @@ Numerica is a mini-game created to be used on Twitch.  The goal is simple: reach
 - A viewer can't type two consecutive numbers.
 
 Good luck!
+
+## Twitch integration
+This version of numerica uses [Gikkman](https://github.com/Gikkman)[Java-Twirk](https://github.com/Gikkman/Java-Twirk) for twitch connection
 
