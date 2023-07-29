@@ -14,9 +14,7 @@ class MainSceneViewModel : ViewModel() {
 
     private val repository by lazy { TwitchRepository(viewModelScope) }
 
-    private val _state by lazy {
-        MutableStateFlow<GameState>(GameState.Start)
-    }
+    private val _state by lazy { MutableStateFlow<GameState>(GameState.Start) }
     val state: StateFlow<GameState> = _state
 
     override fun onCleared() {
@@ -29,7 +27,6 @@ class MainSceneViewModel : ViewModel() {
     }
 
     init {
-
         println("init viewmodel")
         viewModelScope.launch(Dispatchers.IO + coroutineExceptionHandler) {
             repository.participationFlow
@@ -45,7 +42,7 @@ class MainSceneViewModel : ViewModel() {
         val current = state.value.mapToBo()
 
         if (gameParticipation.userName == current.lastUserName) {
-            //        return
+            //        return //TODO uncomment to prevent same user, commented to test
         }
 
         if (gameParticipation.number == current.currentScore + 1) {
@@ -63,7 +60,6 @@ class MainSceneViewModel : ViewModel() {
                 _state.value = GameState.GameOver(current.maxScore, current.lastUserName, current.lastUserNameMVP)
             }
         }
-
 
     }
 
